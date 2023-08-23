@@ -61,24 +61,27 @@ opacity: 0.7;
 
 
 /* Header */
-.menu {
-	height: 258px;
+.menu {	
+	padding-block: calc(var(--fs-3) + 2.25vw) calc(var(--fs-3) + 4.5vw);
 	padding-inline: var(--padding-inline);
 
 	background-color: black;
 	
 	font-family: var(--fonte-secundaria);
 	font-size: var(--fs-3);
-	white-space: nowrap;
+	/* white-space: nowrap; 
+	not sure if necessary*/
 }
 
 .menu__titulo {
-background-image: url("../img/logo-branco-maior.png");
-background-repeat: no-repeat;
-background-position: center;
-padding: 40px 100px;
-width: 100%;
-cursor: pointer;
+	margin-bottom: var(--fs-6);
+	padding: 40px 100px;
+	
+	background-image: url("../img/logo-branco-maior.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	font-size: 0;
 }
 
 .menu__item a {
@@ -92,12 +95,13 @@ color: var(--amarelo);
 }
 
 .menu__pesquisar {
-width: 100%;
-height: 40px;
-border: 2px solid white;
-border-radius: 10px;
-padding-top: 5px;
-margin-bottom: 10px;
+	margin-top: var(--fs-7);
+
+	width: 100%;
+	height: 40px;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding-top: 5px;
 }
 
 .menu__input {

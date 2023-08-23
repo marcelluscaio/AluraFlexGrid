@@ -73,21 +73,32 @@ opacity: 0.7;
 	not sure if necessary*/
 }
 
+.menu__item:nth-child(1){
+	width: 100%;
+}
+
 .menu__titulo {
+	width: 36%;
+	aspect-ratio: 112 / 105;
 	margin-bottom: var(--fs-6);
-	padding: 40px 100px;
+	margin-inline: auto;
 	
 	background-image: url("../img/logo-branco-maior.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 120% 120%;
 	
 	font-size: 0;
 }
 
 .menu__item a {
-transition: .5s;
-color: white;
-text-decoration: none;
+	display: inline-block;
+
+	line-height: 1.5;	
+	color: white;
+
+	text-decoration: none;
+	transition: .5s;
 }
 
 .menu__item a:hover {

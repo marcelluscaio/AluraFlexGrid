@@ -11,6 +11,11 @@
 	--cinza-claro: #D9D9D9;
 	--cinza-escuro: #959595;
 
+/*Layout*/
+/*360 is the width, 24px is the desired padding. 360px is 100%, 24px is X.*/
+--padding-inline: calc((24 * 100 / 360 ) * 1%);
+
+
 /*fontes*/
 	--fonte-primaria: 'Work Sans', sans-serif;
 	--fonte-secundaria: 'Fjalla One', sans-serif;
@@ -57,12 +62,14 @@ opacity: 0.7;
 
 /* Header */
 .menu {
-background-color: black;
-font-family: var(--fonte-secundaria);
-font-size: 16px;
-height: 258px;
-padding: 0 1.5rem;
-white-space: nowrap;
+	height: 258px;
+	padding-inline: var(--padding-inline);
+
+	background-color: black;
+	
+	font-family: var(--fonte-secundaria);
+	font-size: var(--fs-3);
+	white-space: nowrap;
 }
 
 .menu__titulo {

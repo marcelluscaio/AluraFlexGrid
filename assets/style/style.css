@@ -16,6 +16,14 @@
 	--fonte-secundaria: 'Fjalla One', sans-serif;
 
 /*Tamanhos*/
+--fs-1: .75rem; /*12px*/
+--fs-2: .875rem; /*14px*/
+--fs-3: 1rem; /*16px*/
+--fs-4: 1.125rem; /*18px*/
+--fs-5: 1.25rem; /*20px*/
+--fs-6: 1.5rem; /*24px*/
+--fs-7: 2rem; /*32px*/
+
 }
 
 html,
@@ -32,9 +40,9 @@ body {
 .destaques,
 .eventos__titulo,
 .agenda__titulo {
-	font-size: 20px;
-	text-transform: uppercase;
 	font-family: var(--fonte-secundaria);
+	font-size: var(--fs-5);
+	text-transform: uppercase;
 }
 
 img {
@@ -46,8 +54,8 @@ img:hover {
 opacity: 0.7;
 }
 
-/* Header */
 
+/* Header */
 .menu {
 background-color: black;
 font-family: var(--fonte-secundaria);
